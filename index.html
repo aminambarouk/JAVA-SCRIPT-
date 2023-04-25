@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<title>Welcome in javaScript</title>
+<script>
+    function selecteImages() {
+        var images = document.querySelectorAll('img');
+        var urls = [];
+        for (var i = 0; i < images.length; ++i) {
+            urls.push(images[i].src);
+        }
+        return urls;
+    }
+
+
+    window.addEventListener('load', function() {
+        console.log(selecteImages());
+    });
+</script>
+
+<body>
+
+    <img src="https://media.giphy.com/media/jaqvaWqpKflmQ/giphy.gif" />
+</body>
+
+</html>
