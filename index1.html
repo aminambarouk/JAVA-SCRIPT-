@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenues to Enjoy javaScript</title>
+</head>
+<script>
+    function capitalizeParagraphs() {
+
+        const paragraphs = document.querySelectorAll('p');
+
+
+        for (let i = 0; i < paragraphs.length; i++) {
+            const paragraph = paragraphs[i];
+            const text = paragraph.textContent;
+            const capitalizedText = text.toUpperCase();
+            paragraph.textContent = capitalizedText;
+        }
+    }
+
+
+    console.log(capitalizeParagraphs());
+</script>
+
+<body>
+
+    <p>Welcome in our department</p>
+    <p>Welcome in SUZA at SOB</p>
+    <P>To learning CSS with HTML</P>
+    <P>And to enjoy the JavaScript Sweet </P>
+
+
+</body>
+
+</html>
